@@ -1,0 +1,13 @@
+{
+    "asset": "c28aa7c97bf8f2346a2102b54919b747",
+    "fileName": "019b33c2-ecea-73f9-ad82-225719dbe2fd.wav",
+    "prompt": "8 bit hit sound",
+    "negativePrompt": "",
+    "model": "63463307-7362-4155-a628-25deab99fd57",
+    "modelName": "Beatoven Sound Effect",
+    "customSeed": -1,
+    "w3CTraceId": "7e2db9d529785326a0ef350d2ceb5cfb",
+    "duration": 10.0,
+    "autoTrim": false,
+    "hasReference": false
+}
