@@ -6,5 +6,6 @@ namespace CodeBase.Data
     {
         public Transform PlayerSpawnPoint;
         public Camera MainCamera;
+        public GameObject HudPrefab;
     }
 }

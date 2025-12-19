@@ -9,7 +9,7 @@ namespace CodeBase.Systems
 
         public void Init()
         {
-            _cursorService.SetCursorState(isVisible: false, isLocked: false);
+            _cursorService.SetCursorState(isVisible: true, isLocked: false);
         }
     }
 }

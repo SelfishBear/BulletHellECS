@@ -8,6 +8,7 @@ namespace CodeBase.Infrastructure.Services.Input
     {
         Vector2 MoveDirection { get; }
         Vector2 LookDirection { get; }
+        bool IsAttacking { get; }
         void EnableActionMap(ActionMapType actionMap);
         void DisableActionMap(ActionMapType actionMap);
         void DisableAllActionMaps();

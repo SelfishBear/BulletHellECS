@@ -9,9 +9,15 @@ namespace CodeBase.Data
         public GameObject PlayerPrefab;
         public float PlayerMoveSpeed;
         public float Gravity = -9.81f;
+
+        public float PlayerCurrentHealth;
+        public float PlayerMaxHealth;
         
         [Header("CameraSettings")]
         public float CameraSmoothTime;
         public Vector3 CameraOffset;
+        
+        [Header("ProjectilePoolSettings")]
+        public int ProjectilePoolSize = 50;
     }
 }

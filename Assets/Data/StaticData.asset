@@ -15,5 +15,8 @@ MonoBehaviour:
   PlayerPrefab: {fileID: 751762560753533063, guid: 94666c70f395f7a4fb367b07c0557373, type: 3}
   PlayerMoveSpeed: 5
   Gravity: -9.81
+  PlayerCurrentHealth: 100
+  PlayerMaxHealth: 100
   CameraSmoothTime: 0.1
-  CameraOffset: {x: 0, y: 5.29, z: -4.75}
+  CameraOffset: {x: 0, y: 10, z: -5.73}
+  ProjectilePoolSize: 50

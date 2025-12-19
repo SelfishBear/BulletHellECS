@@ -24,6 +24,8 @@ namespace CodeBase.Infrastructure.Services.Input
 
         public Vector2 LookDirection => _inputActions.Player.Look.ReadValue<Vector2>();
 
+        public bool IsAttacking => _inputActions.Player.Attack.IsPressed();
+
         public InputService()
         {
             _inputActions = new InputSystem_Actions();
@@ -60,12 +62,6 @@ namespace CodeBase.Infrastructure.Services.Input
 
         public InputActionMap GetActionMap(ActionMapType actionMap) =>
             _inputActions.asset.FindActionMap(actionMap.ToString(), throwIfNotFound: false);
-    }
-}
-namespace CodeBase.Infrastructure.Services
-{
-    public interface IService
-    {
     }
 }
 
