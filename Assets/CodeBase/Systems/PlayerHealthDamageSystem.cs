@@ -15,11 +15,18 @@ namespace CodeBase.Systems
             {
                 ref var health = ref _filter.Get1(i);
                 ref var hitEvent = ref _filter.Get2(i);
+                
+                EcsEntity playerEntity = _filter.GetEntity(i);
 
                 health.PlayerCurrentHealth -= hitEvent.Damage;
 
-                if (health.PlayerCurrentHealth < 0f)
+                if (health.PlayerCurrentHealth <= 0f)
+                {
                     health.PlayerCurrentHealth = 0f;
+
+                    playerEntity.Get<EventDeathComponent>();
+                    playerEntity.Get<PlayerDeathComponent>();
+                }
             }
         }
     }

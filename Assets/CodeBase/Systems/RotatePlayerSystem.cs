@@ -7,7 +7,7 @@ namespace CodeBase.Systems
 {
     public class RotatePlayerSystem : IEcsRunSystem
     {
-        private EcsFilter<PlayerComponent> _filter;
+        private EcsFilter<PlayerComponent>.Exclude<PlayerDeathComponent> _filter;
         private SceneData _sceneData;
 
         public void Run()
